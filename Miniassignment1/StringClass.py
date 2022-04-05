@@ -38,3 +38,4 @@ class SearchCommonElements(StringClass,PairsPossible):
         res1 = list(set(st) & set(demo))
         print(res1)
 
+obj3=SearchCommonElements()
