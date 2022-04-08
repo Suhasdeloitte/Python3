@@ -61,17 +61,15 @@ def admin():
 
             add_movies()
 
-
-
         if adminchoice == 2:
             def update_movies():
                 for i in range(len(added_movies)):
                     print(added_movies[i]["title"])
 
-                toEditTitle = input("Enter the movie title which you want to be updated")
+                toEditTitle = input("Enter the movie title which you want to be updated: ")
                 print("Enter which data you want to edit")
                 print(
-                    "1.Genre\n2.Cast\n3.Director\n4.Admin Rating\n5.Language\n6.Length\tTimings\tNumber of Shows\t.First Show\tInterval\tTimeGap\n7.Capacity")
+                    "1.Genre\n2.Cast\n3.Director\n4.Admin Rating\n5.Language\n6.Capacity")
                 while True:
                     n = int(input("Enter your choice which you want to edit or -1 to exit\n"))
 
@@ -133,15 +131,13 @@ def admin():
 
                 print(added_movies)
                 admin()
+
             update_movies()
+
+
 
         if adminchoice == 3:
             def delete_movies():
-                if (len(added_movies) == 0):
-                    print("first enter the details")
-                    add_movies()
-                for i in range(len(added_movies)):
-                    print(added_movies[i]["title"])
                 toDeleteMovie = input("Enter the movie name to be deleted")
                 flag = 0
                 flag1 = 0
@@ -157,6 +153,7 @@ def admin():
                     print(added_movies)
 
                 admin()
+
             delete_movies()
 
 

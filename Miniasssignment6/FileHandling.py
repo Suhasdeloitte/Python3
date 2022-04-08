@@ -4,4 +4,4 @@ def longest_word(filename):
     max_len = max(words, key=len)
     return max_len
 
-print(longest_word('a.txt'))
+print(longest_word('a.txt')) #function call

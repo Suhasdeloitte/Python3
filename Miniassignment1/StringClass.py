@@ -2,7 +2,7 @@ from itertools import combinations
 class StringClass:
     name=0
     lst=[]
-    def __init__(self,f):
+    def __init__(self,f): #Constructor Calling
         self.name=f
 
     def length(self):
@@ -14,7 +14,7 @@ class StringClass:
 
 
 
-obj1=StringClass("12314532")
+obj1=StringClass("12314532") #Parameterized Constructor
 print(obj1.name)
 obj1.length()
 lst=obj1.split()
