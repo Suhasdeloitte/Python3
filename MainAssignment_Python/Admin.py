@@ -11,6 +11,7 @@ def admin():
         print("4:Logout")
         adminchoice = int(input("Enter the choice: "))
         if adminchoice == 1:
+            #Adding Movies Information
             def add_movies():
                 Movies = {"title": " ", "genre": " ", "length": " ", "cast": " ", "director": " ", "rating": " ", "language": " ",
                           "shows": " ", "first_show": " ", "interval": " ", "gap": " ", "capacity": " "}
@@ -62,6 +63,7 @@ def admin():
             add_movies()
 
         if adminchoice == 2:
+            #Update Movies
             def update_movies():
                 for i in range(len(added_movies)):
                     print(added_movies[i]["title"])
@@ -137,6 +139,7 @@ def admin():
 
 
         if adminchoice == 3:
+            #
             def delete_movies():
                 toDeleteMovie = input("Enter the movie name to be deleted")
                 flag = 0
@@ -167,4 +170,5 @@ def admin():
 
     if adminchoice == 4:
         print("*********Logout Successfull*************")
+        quit()
 

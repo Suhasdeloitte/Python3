@@ -28,7 +28,7 @@ class Bms:
                             print("correct credentials!")
                             val=str(input("Do You Want to Continue?: "))
                             if val == "yes":
-                                User.user()
+                                User.user() #UserPage
                             elif val == "no":
                                  quit()
                             else:
@@ -36,11 +36,11 @@ class Bms:
                                print("Seems like you are a new ! Do Register")
                                continue
 
-
+                    #AdminPage
                     if name == "admin" and password == "admin":
                         Admin.admin()
 
-
+                #UserRegistration
                 if choice == 2:
                     print("*****************Create new Account******************")
                     name = input("Enter name: ")
@@ -67,7 +67,7 @@ class Bms:
                         else:
                             flag=0
                             print("Kudos!You have entered a valid password")
-                            print("***Account created***") #User Registration
+                            print("***Account created***")
                             break
 
                     if flag == -1:
